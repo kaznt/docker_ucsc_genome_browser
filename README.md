@@ -79,8 +79,6 @@ INSERT INTO `gtexInfo`(`version`, `releaseDate`, `maxMedianScore`) VALUES('V4', 
 INSERT INTO `gtexInfo`(`version`, `releaseDate`, `maxMedianScore`) VALUES('V6', '2015-10-01', '711778');
 
 DROP TABLE IF EXISTS `gtexTissue`;
-/*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `gtexTissue` (
   `id` int(10) unsigned NOT NULL,
   `name` varchar(255) NOT NULL,
