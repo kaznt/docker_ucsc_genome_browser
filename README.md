@@ -57,3 +57,15 @@ The mysql server listens on port 3338. The default username for mysql is 'admin'
 mysql -h 127.0.0.1 -P 3338 -u admin -p
 ```
 
+In MySQL
+mysql> use hgFixed;
+mysql> DROP TABLE IF EXISTS `gtexInfo`;
+mysql> CREATE TABLE `gtexInfo` (
+  `version` varchar(255) NOT NULL,
+  `releaseDate` varchar(255) NOT NULL,
+  `maxMedianScore` double NOT NULL,
+  PRIMARY KEY (`version`)
+) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+mysql> INSERT INTO `gtexInfo`(`version`, `releaseDate`, `maxMedianScore`) VALUES('V4', '2014-08-01', '178213');
+mysql> INSERT INTO `gtexInfo`(`version`, `releaseDate`, `maxMedianScore`) VALUES('V6', '2015-10-01', '711778');
+
