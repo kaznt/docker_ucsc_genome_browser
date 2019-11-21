@@ -57,7 +57,7 @@ The mysql server listens on port 3338. The default username for mysql is 'admin'
 mysql -h 127.0.0.1 -P 3338 -u admin -p
 ```
 
-In MySQL
+In MySQL (based on http://hgdownload.soe.ucsc.edu/goldenPath/hgFixed/database/gtexInfo.*; 20191121)
 ```sjell
 mysql> use hgFixed;
 mysql> DROP TABLE IF EXISTS `gtexInfo`;
