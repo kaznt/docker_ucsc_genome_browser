@@ -58,6 +58,7 @@ mysql -h 127.0.0.1 -P 3338 -u admin -p
 ```
 
 In MySQL
+```sjell
 mysql> use hgFixed;
 mysql> DROP TABLE IF EXISTS `gtexInfo`;
 mysql> CREATE TABLE `gtexInfo` (
@@ -68,4 +69,4 @@ mysql> CREATE TABLE `gtexInfo` (
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
 mysql> INSERT INTO `gtexInfo`(`version`, `releaseDate`, `maxMedianScore`) VALUES('V4', '2014-08-01', '178213');
 mysql> INSERT INTO `gtexInfo`(`version`, `releaseDate`, `maxMedianScore`) VALUES('V6', '2015-10-01', '711778');
-
+```
